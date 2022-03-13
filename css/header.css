@@ -1,0 +1,197 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 48px;
+    background-color: #ffffffd1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+header .logo{
+    position: absolute;
+    top: 0;
+    left: 26px;
+    height: 48px;
+    width: 48px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .logo img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+header p {
+    position: absolute;
+    top: 0;
+    left: 76px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-family: Dancing Script;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+header .logo img:hover{
+    animation: gyro .6s ease-in-out;
+}
+
+header ul {
+    position: relative;
+    width: 18%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li {
+    position: relative;
+    width: 25%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li a img {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    transition: .3s ease-in-out;
+}
+
+header ul li a img:hover{
+    transform: scale(1.08);
+}
+
+header .menu-btn {
+    position: absolute;
+    right: 26px;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu-btn .menu-icon {
+    position: relative;
+    width: 80%;
+    height: 4px;
+    background: #A31627;
+    transition: all .5s ease-in-out;
+}
+
+header .menu-btn .menu-icon::before,
+header .menu-btn .menu-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #A31627;
+    transition: all .5s ease-in-out;
+}
+
+header .menu-btn .menu-icon::before {
+    transform: translateY(10px);
+}
+
+header .menu-btn .menu-icon::after {
+    transform: translateY(-10px);
+}
+
+header .menu-btn:hover{
+    cursor: pointer;
+}
+
+header .menu-btn.open .menu-icon {
+    transform: translateX(-30px);
+    background: transparent;
+}
+
+header .menu-btn.open .menu-icon::before {
+    transform: rotate(45deg) translate(22px, -22px);
+}
+
+header .menu-btn.open .menu-icon::after {
+    transform: rotate(-45deg) translate(22px, 22px);
+}
+
+@keyframes gyro {
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    header ul {
+        width: 28%;
+    }
+
+    header p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header ul {
+        width: 42%;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    header {
+        height: 80px;
+    }
+    header .logo {
+        height: 80px;
+        width: 58px;
+    }
+
+    header p {
+        left: 124px;
+        font-size: 40px;
+    }
+
+    header ul {
+        height: 80px;
+        width: 24%;
+    }
+
+    header ul li {
+        height: 80px;
+    }
+
+    header .menu-btn {
+        height: 80px;
+        width: 58px;
+    }
+}

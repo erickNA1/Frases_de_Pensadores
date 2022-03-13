@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Frases de Escritores e Pensadores</title>
+    <link rel="icon" href="./imgs/logo.svg">
+
+</head>
+
+<body>
+    <div class="loader">
+        <div class="logo-container">
+            <img src="./imgs/logo.svg" alt="">
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="offscreen-menu">
+            <div class="container">
+                <div class="home-pages">
+                    <h2>Pagina principal</h2>
+                    <ul>
+                        <li><a href="#landing" onclick="toggleMenu()" class="menu-link">Inicio</a></li>
+                        <li><a href="#categories" onclick="toggleMenu()" class="menu-link">Categorias</a></li>
+                        <li><a href="#phrases" onclick="toggleMenu()" class="menu-link">Frases</a></li>
+                        <li><a href="#footer" onclick="toggleMenu()" class="menu-link">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="extra-pages">
+                    <h2>Mais paginas</h2>
+                    <ul>
+                        <li><a href="" class="menu-link">Biografias</a></li>
+                        <li><a href="" class="menu-link">Legendas & Hashtags</a></li>
+                        <li><a href="" class="menu-link">Temas</a></li>
+                        <li><a href="" class="menu-link">Recentes</a></li>
+                        <li><a href="" class="menu-link">Populares</a></li>
+                        <li><a href="" class="menu-link">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header>
+            <a href="#landing" class="logo"><img src="./imgs/logo.svg" alt=""></a>
+            <p>
+                Frases de Escritores e Pensadores
+            </p>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCkBxjnQataOaFMyKl868_3A"><img src="./imgs/youtube_1.svg"
+                            alt=""></a></li>
+                <li><a href="https://www.facebook.com/frasesdeescritoresepensadores"><img src="./imgs/facebook_1.svg"
+                            alt=""></a></li>
+                <li><a href="https://www.instagram.com/frasesdeescritoresepensadores/"><img src="./imgs/instagram_1.svg"
+                            alt=""></a></li>
+                <li><a href="https://br.pinterest.com/frasesescritoresepensadores"><img src="./imgs/pinterest_1.svg"
+                            alt=""></a></li>
+            </ul>
+            <div class="menu-btn" onclick="toggleMenu()">
+                <div class="menu-icon"></div>
+            </div>
+        </header>
+
+        <section class="landing" id="landing">
+            <div class="container">
+                <div class="search-container">
+                    <h2>Frases e Pensamentos</h2>
+                    <p><span>Mais de 2 milhões</span> de frases e pensamentos para compartilhar.</p>
+                    <form action="">
+                        <input type="text" class="phrase-search" id="phrase-search" name="phrase-search"
+                            placeholder="Procurar frases...">
+                    </form>
+                </div>
+
+                <div class="info-container">
+                    <div class="grid-container">
+
+                        <div class="grid">
+                            <div class="img-container">
+                                <img src="./imgs/einstein.jpg" alt="">
+                            </div>
+                            <p>Albert Einstein</p>
+                            <a href=""></a>
+                        </div>
+
+                        <div class="grid">
+                            <div class="img-container">
+                                <img src="./imgs/einstein.jpg" alt="">
+                            </div>
+                            <p>Albert Einstein</p>
+                            <a href=""></a>
+                        </div>
+
+                        <div class="grid">
+                            <div class="img-container">
+                                <img src="./imgs/einstein.jpg" alt="">
+                            </div>
+                            <p>Albert Einstein</p>
+                            <a href=""></a>
+                        </div>
+
+                        <div class="grid">
+                            <div class="img-container">
+                                <img src="./imgs/einstein.jpg" alt="">
+                            </div>
+                            <p>Albert Einstein</p>
+                            <a href=""></a>
+                        </div>
+
+                        <div class="grid">
+                            <div class="img-container">
+                                <img src="./imgs/einstein.jpg" alt="">
+                            </div>
+                            <p>Albert Einstein</p>
+                            <a href=""></a>
+                        </div>
+
+                        <div class="grid">
+                            <div class="img-container">
+                                <img src="./imgs/einstein.jpg" alt="">
+                            </div>
+                            <p>Albert Einstein</p>
+                            <a href=""></a>
+                        </div>
+
+                        <div class="grid">
+                            <div class="img-container">
+                                <img src="./imgs/einstein.jpg" alt="">
+                            </div>
+                            <p>Albert Einstein</p>
+                            <a href=""></a>
+                        </div>
+
+                        <div class="grid">
+                            <div class="img-container">
+                                <img src="./imgs/einstein.jpg" alt="">
+                            </div>
+                            <p>Albert Einstein</p>
+                            <a href=""></a>
+                        </div>
+
+                    </div>
+
+                    <div class="list-container">
+                        <div class="add-btn">
+                            <a href="">Adicionar frases</a><span>+</span>
+                        </div>
+
+                        <ul>
+                            <li><a href="">Frases</a></li>
+                            <li><a href="">Frases Inteligentes</a></li>
+                            <li><a href="">Mensagens de Reflexão</a></li>
+                            <li><a href="">Frases de Amor</a></li>
+                            <li><a href="">Frases Bonitas</a></li>
+                            <li><a href="">Frases de Amizade</a></li>
+                            <li><a href="">Frases de Reflexão</a></li>
+                            <li><a href="">Frases de Motivação</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="slide-show" id="slide-show">
+            <div class="container">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="text">
+                            <h2>"Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser
+                                realizado."</h2>
+                            <p>Roberto Shinyashiki</p>
+                        </div>
+
+                    </div>
+
+                    <div class="slide">
+                        <div class="text">
+                            <h2>"A amizade desenvolve a felicidade e reduz o sofrimento, duplicando a nossa alegria e
+                                dividindo a nossa dor."
+                            </h2>
+                            <p>Joseph Addison</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="text">
+                            <h2>"Ser feliz sem motivo é a mais autêntica forma de felicidade."
+                            </h2>
+                            <p>Carlos Drummond de Andrade</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="text">
+                            <h2>"Não permito que nenhuma reflexão filosófica me tire a alegria das coisas simples da
+                                vida."
+                            </h2>
+                            <p>Sigmund Freud</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="text">
+                            <h2>"Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser
+                                realizado."</h2>
+                            <p>Roberto Shinyashiki</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories" id="categories">
+            <div class="midle-line"></div>
+            <div class="container">
+                <div class="categorie-box">
+                    <h2 class="slide-up">Frases</h2>
+                    <ul>
+                        <li><a href="" class="slide-up">Frases Bonitas</a></li>
+                        <li><a href="" class="slide-up">Frases de saudades</a></li>
+                        <li><a href="" class="slide-up">Frases de Otimismo</a></li>
+                        <li><a href="" class="slide-up">Frases de Fernando Pessoa</a></li>
+                        <li><a href="" class="slide-up">Frases de Shakespeare</a></li>
+                    </ul>
+                    <div class="bottom-live"></div>
+                </div>
+
+                <div class="filer"></div>
+                <div class="filer"></div>
+
+                <div class="categorie-box">
+                    <h2 class="slide-up">Poemas</h2>
+                    <ul>
+                        <li><a href="" class="slide-up">Poemas de Saudade</a></li>
+                        <li><a href="" class="slide-up">Poemas de Amor</a></li>
+                        <li><a href="" class="slide-up">Poemas Românticos</a></li>
+                        <li><a href="" class="slide-up">Poemas de Adolescente</a></li>
+                        <li><a href="" class="slide-up">Poemas de Angústia</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="categorie-box">
+                    <h2 class="slide-up">Mensagens</h2>
+                    <ul>
+                        <li><a href="" class="slide-up">Mensagens de Reflexão</a></li>
+                        <li><a href="" class="slide-up">Mensagens de Aniversário</a></li>
+                        <li><a href="" class="slide-up">Mensagens para Amigos</a></li>
+                        <li><a href="" class="slide-up">Mensagens de Feliz Aniversário</a></li>
+                        <li><a href="" class="slide-up">Mensagem para Pastor</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="filer"></div>
+                <div class="filer"></div>
+
+                <div class="categorie-box">
+                    <h2 class="slide-up">Textos</h2>
+                    <ul>
+                        <li><a href="" class="slide-up">Textos de Amor</a></li>
+                        <li><a href="" class="slide-up">Textos de Amizade</a></li>
+                        <li><a href="" class="slide-up">Versos de Amizade</a></li>
+                        <li><a href="" class="slide-up">Epígrafe para TCC</a></li>
+                        <li><a href="" class="slide-up">Textos de Perseverança</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="phrases" id="phrases">
+            <div class="scroll-container">
+                <div class="left-scroll">
+                    <h2>
+                        Albert Einstein. <span>Sócrates.</span> Nelson Mandela. <span>Clarice Lispector.</span>
+                        Dalai Lama. <span>Pitágoras.</span> Albert Einstein. <span>Sócrates.</span> Nelson Mandela.
+                        <span>Clarice Lispector.</span> Dalai Lama. <span>Pitágoras.</span>
+                        Albert Einstein. <span>Sócrates.</span> Nelson Mandela. <span>Clarice Lispector.</span>
+                        Dalai Lama. <span>Pitágoras.</span> Albert Einstein. <span>Sócrates.</span> Nelson Mandela.
+                        <span>Clarice Lispector.</span> Dalai Lama. <span>Pitágoras.</span>
+                    </h2>
+                </div>
+                <div class="right-scroll">
+                    <h2>
+                        <span>Oscar Wilde.</span> Rafael Figueiredo. <span>Thomas Edison.</span> William Shakespeare.
+                        <span>Bob Marley.</span> Victor Hugo. <span>Oscar Wilde.</span> Rafael Figueiredo. <span>Thomas
+                            Edison.</span>
+                        William Shakespeare. <span>Bob Marley.</span> Victor Hugo.
+                        <span>Oscar Wilde.</span> Rafael Figueiredo. <span>Thomas Edison.</span> William Shakespeare.
+                        <span>Bob Marley.</span> Victor Hugo. <span>Oscar Wilde.</span> Rafael Figueiredo. <span>Thomas
+                            Edison.</span>
+                        William Shakespeare. <span>Bob Marley.</span> Victor Hugo.
+                    </h2>
+                </div>
+            </div>
+
+            <div class="phrase-container">
+                <div class="phrase-box">
+                    <p><span>"</span>A persistência é o caminho do êxito.</p>
+                    <a href="">Charles Chaplin</a>
+                    <div class="incon-bar">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/facebook_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/instagram_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/whatsapp_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/pinterest_1.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="interactions">
+                            <div class="like">
+                                <img src="./imgs/heart.png" alt="">
+                                <p>Adicionar à coleção</p>
+                            </div>
+                            <div class="image">
+                                <img src="./imgs/image.png" alt="">
+                                <p>Ver imagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-box">
+                    <p><span>"</span>Duvida da luz dos astros,
+                        De que o sol tenha calor,
+                        Duvida até da verdade,
+                        Mas confia em meu amor.</p>
+                    <a href="">William Shakespeare</a>
+                    <div class="incon-bar">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/facebook_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/instagram_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/whatsapp_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/pinterest_1.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        
+                        <div class="interactions">
+                            <div class="like">
+                                <img src="./imgs/heart.png" alt="">
+                                <p>Adicionar à coleção</p>
+                            </div>
+                            <div class="image">
+                                <img src="./imgs/image.png" alt="">
+                                <p>Ver imagem</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="phrase-box">
+                    <p><span>"</span>O amor calcula as horas por meses, e os dias por anos; e cada pequena ausência é
+                        uma eternidade.</p>
+                    <a href="">John Dryden</a>
+                    <div class="incon-bar">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/facebook_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/instagram_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/whatsapp_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/pinterest_1.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="interactions">
+                            <div class="like">
+                                <img src="./imgs/heart.png" alt="">
+                                <p>Adicionar à coleção</p>
+                            </div>
+                            <div class="image">
+                                <img src="./imgs/image.png" alt="">
+                                <p>Ver imagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phrase-box">
+                    <p><span>"</span>Quem tem um amigo, mesmo que um só, não importa onde se encontre, jamais sofrerá de
+                        solidão; poderá morrer de saudades, mas não estará só.</p>
+                    <a href="">Amyr Klink</a>
+                    <div class="incon-bar">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/facebook_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/instagram_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/whatsapp_1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./imgs/pinterest_1.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="interactions">
+                            <div class="like">
+                                <img src="./imgs/heart.png" alt="">
+                                <p>Adicionar à coleção</p>
+                            </div>
+                            <div class="image">
+                                <img src="./imgs/image.png" alt="">
+                                <p>Ver imagem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <div class="more">
+                    <a href="">Mais Frase</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer" id="footer">
+            <div class="container">
+                <div class="text-container">
+                    <h2 class="slide-up">Participe da pagina e aumente nosso acervo.</h2>
+                    <p class="slide-up">Registre suas frases conosco e ajude-nos a crescer.
+
+                        Trabalhamos com divulgações de autores; criação de book trailer de livros;
+                        criação de posts; criação de sites para autores; material de marketing digital
+                        pra autores e áudio books(voz e legendas).
+                        <br>
+                        <br>
+                        Para mais informações entre em contato conosco por aqui.
+                    </p>
+                    <ul>
+                        <li><a
+                                href="https://www.youtube.com/channel/UCkBxjnQataOaFMyKl868_3A?sub_confirmation=1">youtube</a>
+                        </li>
+                        <li><a
+                                href="https://www.youtube.com/channel/UCkBxjnQataOaFMyKl868_3A?sub_confirmation=1">facebook</a>
+                        </li>
+                        <li><a href="https://www.instagram.com/frasesdeescritoresepensadores/">instagram</a></li>
+                        <li><a href="https://br.pinterest.com/frasesescritoresepensadores">pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="form-container">
+                    <form action="" class="info-form">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="user-name">
+
+                        <label for="number">Numero</label>
+                        <input type="text" id="number" name="user-number">
+
+                        <label for="about">Assunto</label>
+                        <input type="text" id="about" name="about">
+                    </form>
+                    <form action="" class="mail-form">
+                        <label for="mail">Email</label>
+                        <input type="text" id="mail" name="mail" class="mail">
+
+                        <label for="number">Mensagem</label>
+                        <textarea name="message" class="message"></textarea>
+
+                        <input type="submit" value="enviar">
+                    </form>
+                    <p>Copyright © 2022 Frases de escritores e pensadores. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/animation.js"></script>
+    <script src="./scripts/slider.js"></script>
+
+</body>
+
+</html>

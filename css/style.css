@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url("./loader.css");
+@import url("./body.css");
+@import url("./menu.css");
+@import url("./header.css");
+@import url("./landing.css");
+@import url("./slide-show.css");
+@import url("./categories.css");
+@import url("./phrases.css");
+@import url("./footer.css");
+@font-face {
+    src: url('../fonts/1942.ttf');
+    font-family: Report;
+}
+@font-face {
+    src: url('../fonts/Kingthings_Trypewriter.ttf');
+    font-family: Kingthings;
+}

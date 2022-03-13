@@ -1,0 +1,259 @@
+.phrases {
+    position: relative;
+    width: 100%;
+    height: 210vh;
+    padding-top: 88px;
+    background: #eee;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.phrases .scroll-container {
+    position: relative;
+    width: 100%;
+    height: 228px;
+    padding-top: 48px;
+    padding-bottom: 8px;
+    font-size: 30px;
+    background: url('../imgs/categories_bg.svg') center;
+    overflow: hidden;
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.phrases .scroll-container:hover {
+    cursor: default;
+}
+
+.phrases .scroll-container span {
+    color: #A31627;
+    font-family: Report;
+}
+
+.phrases .scroll-container .left-scroll {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.phrases .scroll-container .left-scroll h2 {
+    position: absolute;  
+    font-family: Report;
+    white-space: nowrap;
+    animation: scroll-l 118s linear infinite;
+}
+
+.phrases .scroll-container .right-scroll {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.phrases .scroll-container .right-scroll h2 {
+    position: absolute;
+    font-family: Report;
+    white-space: nowrap;
+    animation: scroll-r 162s linear infinite;
+}
+
+@keyframes scroll-l {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-58%);
+    }
+}
+
+@keyframes scroll-r {
+    0% {
+        transform: translateX(-58%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.phrases .phrase-container {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: 0 4%;
+}
+
+.phrases .phrase-container .phrase-box {
+    position: relative;
+    width: 700px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px 0;
+    border-radius: 8px;
+    background: #e9e9e9;
+}
+
+.phrases .phrase-container .phrase-box p {
+    font-size: 1.2rem;
+    color: black;
+    word-wrap: break-word;
+    font-family: Kingthings;
+}
+
+.phrases .phrase-container .phrase-box p span {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: Secular One;
+    font-size: 2rem;
+}
+
+.phrases .phrase-container .phrase-box a {
+    font-size: .7rem;
+    width: auto;
+    color: blue;
+}
+
+.phrases .phrase-container .phrase-box a:hover {
+    text-decoration: underline;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar {
+    position: relative;
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: .4px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.phrases .phrase-container .phrase-box .incon-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar ul li {
+    width: 22px;
+    height: 22px;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar ul li a {
+    width: 100%;
+    height: 100%;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar ul li a img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar .interactions {
+    position: relative;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar .interactions .like {
+    position: relative;
+    width: 130px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar .interactions .like img {
+    width: 16px;
+    height: 16px;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar .interactions .like p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: .7rem;
+    text-align: left;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar .interactions .image {
+    position: relative;
+    width: 90px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar .interactions .image img {
+    width: 20px;
+    height: 20px;
+}
+
+.phrases .phrase-container .phrase-box .incon-bar .interactions .image p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: .7rem;
+    text-align: left;
+}
+
+.phrases .btn-container {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phrases .btn-container .more {
+    width: 120px;
+    height: 30px;
+    background: #A31627;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phrases .btn-container .more a {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+    .phrases .phrase-container .phrase-box {
+        width: 360px;
+    }
+
+    .phrases .phrase-container {
+        padding: 0;
+    }
+
+    .phrases .phrase-container .phrase-box .incon-bar .interactions {
+        display: none;
+    }
+
+    .phrases .phrase-container .phrase-box .incon-bar ul {
+        width: 40%;
+    }
+}

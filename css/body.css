@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto Mono;
+}
+
+body{
+    background: #FFFFFF;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: none;
+    opacity: 0;
+    transition: .2s ease-in-out;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #a31627dd;
+}
+
+::-webkit-scrollbar-track{
+    background: #FFF4F1;
+}
+
